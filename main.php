@@ -14,15 +14,13 @@ $students = [
 ];
 
 $cLasse=count($students);
+$agetot = 0;
 
 foreach ($students as $key => $value) {
     echo $key." est âgé de ".$value." ans.<br>";
+    $agetot += $value;
 };
 
-$agetot = 0;
-foreach ($students as $value){
-    $agetot= $value + $agetot;
-};
 $moyenne = $agetot / $cLasse;
 
 echo "La moyenne d'âge est ".$moyenne;
